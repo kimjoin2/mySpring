@@ -22,7 +22,6 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.bums.src" />
-	
-	
+	<context:component-scan base-package="com.bums.src.filter" />
 	
 </beans:beans>

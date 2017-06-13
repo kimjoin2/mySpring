@@ -14,12 +14,12 @@ import javax.servlet.annotation.WebFilter;
  */
 @WebFilter(filterName = "characterEncodingFilter",
 			urlPatterns="/*")
-public class CharacterEncodingUTF8 implements Filter {
+public class CharacterEncodingFilter implements Filter {
 	
     /**
      * Default constructor. 
      */
-    public CharacterEncodingUTF8() {}
+    public CharacterEncodingFilter() {}
 
 	/**
 	 * @see Filter#destroy()
