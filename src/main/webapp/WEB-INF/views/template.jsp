@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String head = (String)request.getAttribute("head");
-    String leftBody = (String)request.getAttribute("leftBody");
-    String centerBody = (String)request.getAttribute("centerBody");
-    String rightBody = (String)request.getAttribute("rightBody");
+    String leftBody = (String)request.getAttribute("left");
+    String centerBody = (String)request.getAttribute("center");
+    String rightBody = (String)request.getAttribute("right");
     String bottom = (String)request.getAttribute("bottom");
 %>
 <%--
