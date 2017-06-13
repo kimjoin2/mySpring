@@ -2,6 +2,6 @@
 <%--
 bottom's height is 100px
 --%>
-<div style="text-align: center">
+<div class="topbottom">
     bottom
 </div>

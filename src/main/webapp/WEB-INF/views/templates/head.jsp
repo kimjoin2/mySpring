@@ -2,6 +2,6 @@
 <%--
 head's height is 150px
 --%>
-<div style="width:100%;">
+<div class="topbottom">
     this is head
 </div>
