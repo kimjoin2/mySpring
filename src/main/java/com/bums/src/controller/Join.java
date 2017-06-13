@@ -25,6 +25,6 @@ public class Join {
 		
 		System.out.println(user.toString());
 		
-		return new SetViewTemplate().defaultViewTemplate(model); 
+		return new SetViewTemplate().defaultViewTemplate(model);
 	}
 }
