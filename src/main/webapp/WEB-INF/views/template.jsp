@@ -17,26 +17,19 @@ bottom's height is 100px
 <html>
 <head>
     <title>Welcome!</title>
-    <style>
-
-        .all-width {
-            width:1000px;
-            margin: 0 auto;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="/resources/css/templateBase.css" >
 </head>
 <body>
-<div id="all" class="all-width">
-    <div id="head" class="all-width" style="height:150px;">
+<div id="all" class="bodyContainer">
+    <div id="head" class="templateContainer" style="height:130px;">
         <jsp:include page="<%= head%>" flush="false"/>
     </div>
-    <div id="body" class="all-width">
-        <div id="left-body" style="width: 200px; float:left;"> <jsp:include page="<%= leftBody%>" flush="false"/> </div>
-        <div id="center-body" style="width: 650px; float:left;" > <jsp:include page="<%= centerBody%>" flush="false"/> </div>
+    <div id="body" class="templateContainer" style="height:570px;" >
+        <div id="left-body" style="width: 150px; float:left;"> <jsp:include page="<%= leftBody%>" flush="false"/> </div>
+        <div id="center-body" style="width: 700px; float:left;" > <jsp:include page="<%= centerBody%>" flush="false"/> </div>
         <div id="right-body" style="width:150px;float:left" > <jsp:include page="<%= rightBody%>" flush="false"/> </div>
     </div>
-    <div id="bottom" class="all-width" style="height:100px;">
+    <div id="bottom" class="templateContainer" style="height:100px;">
         <jsp:include page="<%=bottom%>" flush="false"/>
     </div>
 </div>

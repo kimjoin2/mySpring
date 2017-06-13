@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%--
-left-body's width is 200px
+left-body's width is 150px
 --%>
 <style>
     ul {
@@ -11,7 +11,7 @@ left-body's width is 200px
     }
 </style>
 
-<div>
+<div class="innerTemplate">
     <div style="height:90px;">
         <div style="height:30px;">
             name
