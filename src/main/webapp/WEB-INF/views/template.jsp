@@ -9,8 +9,8 @@
 <%--
 head's height is 150px
 body's width is 1000px
-    left-body's width is 200px
-    center-body's width is 650px
+    left-body's width is 150px
+    center-body's width is 700px
     right-body's width is 150px
 bottom's height is 100px
 --%>
