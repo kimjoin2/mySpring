@@ -12,6 +12,7 @@ public class Main {
 	
 	@RequestMapping(value="/template", method=RequestMethod.GET)
 	public String main(Model model) {
+		
 		new SetViewTemplate().defaultViewTemplate(model);
 		return "template";
 	}
