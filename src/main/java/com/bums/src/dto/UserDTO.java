@@ -20,4 +20,10 @@ public class UserDTO {
 	public String toString() {
 		return "UserDTO [id=" + id + ", pw=" + pw + "]";
 	}
+	
+	public UserDTO(){}
+	public UserDTO(String id, String pw) {
+		this.id = id;
+		this.pw = pw;
+	}
 }
