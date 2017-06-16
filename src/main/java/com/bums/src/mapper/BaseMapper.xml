@@ -2,9 +2,28 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
 <mapper namespace="com.bums.src.mapper.BaseMapper">
- 
- 	<insert id="insertUser" parameterType="com.bums.src.dto.UserDTO">
+ 	
+ 	
+ 	
+ 	<insert id="insertUser" parameterType="UserDTO">
  		INSERT INTO user VALUES (#{id}, #{pw})
  	</insert>
+ 	
+ 	<select id="canLogin" parameterType="UserDTO" resultType="UserDTO">
+ 		SELECT
+ 			id as "id",
+ 			pw as "pw"
+ 		FROM user
+ 		WHERE id = #{id} AND pw = #{pw}
+ 	</select>
+ 	
+ 	<delete id="deleteUser" parameterType="UserDTO">
+ 		DELETE FROM user WHERE id = #{id}
+ 	</delete>
+ 	
+ 	<update id="changePw" parameterType="UserDTO">
+ 		UPDATE user SET pw = #{pw} WHERE id = #{id}
+ 	</update>
 </mapper>
